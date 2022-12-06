@@ -76,7 +76,6 @@ kmeans5 <- kmeans(1-cosine, 5)
 kmeans6 <- kmeans(1-cosine, 6)
 
 # Voronoi-plots
-#sep <- cbind( longitude = c(6.14998,7.85), latitude  = c(46.2,45.6833))
 window <- qlcVisualize::hullToOwin(loc, shift = 0.1, alpha = 0.3)
 v <- qlcVisualize::voronoi(loc, window)
 cols <- qlcVisualize::heeringa(1-cosine)
